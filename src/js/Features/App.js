@@ -1,10 +1,10 @@
-import { Rectangle } from "./rectangle.js";
+import Rectangle from "./Rectangle.js";
 
 /**
  * @class
  * The application that creates the drawing zone and handle Rectangle Drawing
  */
-export class App {
+export default class App {
     constructor() {
         this.divID = 0;
         this.isFirstClick = true;
@@ -15,12 +15,12 @@ export class App {
         this.timeout = undefined;
         this.minimalAreaDiff = undefined;
         this.root = document.getElementById("root");
-        this.resetButton = document.getElementById("reset");
-        this.paintButton = document.getElementById("paint");
-        this.logInfosButton = document.getElementById("logInfos");
-        this.debugCheckbox = document.getElementById("debugCheckbox");
-        this.darkThemeCheckbox = document.getElementById("darkThemeCheckbox");
-        this.utils = document.getElementById("utils");
+        this.resetButton = document.querySelector(".reset");
+        this.paintButton = document.querySelector(".paint");
+        this.logInfosButton = document.querySelector(".logInfos");
+        this.debugCheckbox = document.querySelector(".debugCheckbox");
+        this.darkThemeCheckbox = document.querySelector(".darkThemeCheckbox");
+        this.utils = document.querySelector(".utils");
         this.utils.style.display = "none";
         this.#addListeners();
         this.#resize();

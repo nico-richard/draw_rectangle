@@ -2,7 +2,7 @@
  * @Class
  * The rectangle created on click
  */
-export class Rectangle {
+export default class Rectangle {
     /**
      * @param {number} left The left position of the rectangle.
      * @param {number} top The top position of the rectangle.

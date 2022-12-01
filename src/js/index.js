@@ -1,4 +1,6 @@
-import { App } from "./app.js";
+import App from "./Features/App.js";
 import "../css/index.css";
 
-export const app = new App();
+document.addEventListener("DOMContentLoaded", () => {
+    new App();
+});

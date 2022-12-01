@@ -51,9 +51,9 @@ body {
     background-color: var(--drawZoneColor);
 }
 
-#commands,
-#utils,
-#debug {
+.commands,
+.utils,
+.debug {
     display: flex;
     width: 50%;
     justify-content: space-evenly;
@@ -79,7 +79,7 @@ button:active {
     background: var(--btnFocusColor);
 }
 
-#darkThemeCheckbox:checked {
+.darkThemeCheckbox:checked {
     --bgColor: #red;
 }
 
