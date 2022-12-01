@@ -46,7 +46,7 @@ export default class Rectangle {
      * @param {number} right The right position.
      * @param {number} bottom The bottom position.
      */
-    display(right, bottom) {
+    displayRectangle(right, bottom) {
         right -= this.app.offset[0];
         bottom -= this.app.offset[1];
         right > this.left
@@ -68,7 +68,7 @@ export default class Rectangle {
      * @param {function} func The callback function.
      * @param {number} timing The timeout in milliseconds.
      */
-    #handleRectRemoval(func, timing) {
+    #handleRectanglesRemoval(func, timing) {
         window.clearTimeout(this.app.timeout);
         this.app.timeout = window.setTimeout(func, timing);
     }
@@ -78,15 +78,15 @@ export default class Rectangle {
      * If an other remove event is triggered, wait for the last animation to finish before queue deletion.
      * @param {event} e The event object.
      */
-    onDbClick(e) {
+    handleDoubleClick(e) {
         e.stopPropagation();
         e.target.animate(this.rotate360, { duration: 900 });
-        this.app.rectDivToRemove.push(e.target);
-        this.#handleRectRemoval(() => {
-            this.app.allRect = this.app.allRect.filter((rect) => {
-                return !this.app.rectDivToRemove.includes(rect.div);
+        this.app.rectanglesDivToRemove.push(e.target);
+        this.#handleRectanglesRemoval(() => {
+            this.app.rectangles = this.app.rectangles.filter((rect) => {
+                return !this.app.rectanglesDivToRemove.includes(rect.div);
             });
-            this.app.rectDivToRemove.forEach((rect) => {
+            this.app.rectanglesDivToRemove.forEach((rect) => {
                 rect.remove();
             });
         }, 1000);
