@@ -29,7 +29,7 @@ Two commands are available :
 ### Installation
 
 1. Clone the repo
-`git clone `https://github.com/nico-richard/draw_rectangle.git
+`git clone https://github.com/nico-richard/draw_rectangle.git`
 
 2. Install npm packages
 `npm install`
@@ -43,7 +43,7 @@ No frameworks have been used in this project.
 
 1. Add tests with Jest
 2. Improve the UI, change to Styled Components
-3. Develop new features
+3. Develop new features like drag & drop
 
 ---
 
