@@ -1,1 +1,1 @@
-import { Rectangle } from "./rectangle.js";
+import { Rectangle } from ".../features/Rectangle";
