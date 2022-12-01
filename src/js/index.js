@@ -1,4 +1,4 @@
-import { app } from "./app.js";
+import { App } from "./app.js";
 import "../css/index.css";
 
-export default app;
+export const app = new App();

@@ -19,6 +19,24 @@ Two commands are available :
 - CSS
 - JS
 
+## Getting Started
+
+### Prerequisites
+
+- npm
+`npm install npm@latest`
+
+### Installation
+
+1. Clone the repo
+`git clone https://github.com/nico-richard/draw_rectangle.git`
+
+2. Install npm packages
+`npm install`
+
+3. Run
+`npm run start`
+
 No frameworks have been used in this project.
 
 ## Roadmap

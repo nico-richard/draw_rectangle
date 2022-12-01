@@ -164,5 +164,3 @@ export class App {
         console.log("------ ENG LOG ------");
     }
 }
-
-export let app = new App();
