@@ -19,7 +19,7 @@ export class Rectangle {
         this.div.style.top = `${top}px`;
         this.div.style.left = `${left}px`;
         this.newAllRect = [];
-        root.appendChild(this.div);
+        this.app.root.appendChild(this.div);
         this.area = 0;
         this.setRandomColor();
         this.rotate360 = [

@@ -64,8 +64,8 @@ export class App {
      */
     #resize() {
         this.offset = [
-            root.getBoundingClientRect().left,
-            root.getBoundingClientRect().top,
+            this.root.getBoundingClientRect().left,
+            this.root.getBoundingClientRect().top,
         ];
     }
 
@@ -156,9 +156,12 @@ export class App {
      * Log to the console informations about the current important variables.
      */
     #logInfos() {
+        console.log("------ START LOG ------");
         console.log("allRect : ", this.allRect);
         console.log("workingRect : ", this.workingRect);
         console.log("isFirstClick : ", this.isFirstClick);
+        console.log("offset : ", this.offset);
+        console.log("------ ENG LOG ------");
     }
 }
 
