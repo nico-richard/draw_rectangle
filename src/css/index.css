@@ -1,0 +1,91 @@
+:root,
+:root.dark {
+    --bgColor: #333;
+    --fontColor: #eee;
+    --drawZoneColor: #555;
+    --btnBgColor: #eee;
+    --btnFontColor: #000;
+    --btnFocusColor: #888;
+    --bgFooter: #444;
+}
+:root.light {
+    --bgColor: #ddd;
+    --fontColor: #333;
+    --drawZoneColor: #fff;
+    --btnBgColor: #fff;
+    --btnFontColor: #333;
+    --btnFocusColor: #bbb;
+    --bgFooter: #fff;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--fontColor);
+    min-width: 700px;
+    transition: all 0.5s;
+}
+
+body {
+    background-color: var(--bgColor);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#root {
+    margin: 20px;
+    position: relative;
+    width: 70%;
+    min-width: 500px;
+    height: 500px;
+    min-height: 500px;
+    border: 1px solid var(--fontColor);
+    background-color: var(--drawZoneColor);
+}
+
+#commands,
+#utils,
+#debug {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    width: 130px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: var(--btnBgColor);
+}
+
+button:hover {
+    border: 2px solid var(--btnFontColor);
+}
+
+button:active {
+    background: var(--btnFocusColor);
+}
+
+#darkThemeCheckbox:checked {
+    --bgColor: #red;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--bgFooter);
+}

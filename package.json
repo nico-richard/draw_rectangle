@@ -1,0 +1,22 @@
+{
+  "name": "test_tech_xgil",
+  "version": "1.0.0",
+  "description": "Technical test",
+  "main": "webpack.config..js",
+  "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Nicolas RICHARD",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  }
+}
